@@ -35,6 +35,15 @@ You can work on these exercises using the online Ocaml playground: [Try Ocaml](h
 1. [Longest subsequence](ocaml-basics/longsub)
 1. [Ping pong](ocaml-basics/ping-pong)
 
+## Untyped arithmetic expressions
+
+To work at this project you must have a local installation of OCaml. 
+Look [here](install-ocaml) for minimal instructions.
+
+1. [A minimal language of boolean expressions](untyped-expr/boolexpr)
+1. Further boolean connectives
+1. Simple integer arithmetics
+
 ## References
 
 - [OCaml Programming: Correct + Efficient + Beautiful](https://cs3110.github.io/textbook/cover.html)
