@@ -1,6 +1,7 @@
-let fib x =
-  let rec aux acc n2 n1 = function
-  | 1 -> acc
-  | c -> aux ((n2 + n1) :: acc) n1 (n2 + n1) (c - 1)
-  in
-  List.rev(aux [1; 0] 0 1 (x - 1))
+let rec fib = function
+  n when n<0 -> failwith "Error: Number not valid"
+  | 0 -> []
+  | 1 -> [0]
+  | 2 -> [0;1]
+  | x -> let l = fib (x-1) in
+          match List.rev l with x::y::l' -> l@[x+y]
