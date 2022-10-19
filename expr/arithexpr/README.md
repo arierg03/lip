@@ -1,4 +1,4 @@
-# Arithmetic expressions
+# Untyped arithmetic expressions
 
 Extend the language of [boolean expressions](../andboolexpr) with arithmetic expressions on natural numbers,
 according to the following [AST](src/ast.ml):
@@ -20,6 +20,33 @@ The meaning of the new constructs is the following:
 - **Succ e** evaluates to the successor of e;
 - **Pred e** evaluates to the predecessor of e (defined only if e is not zero);
 - **IsZero e** evaluates to true iff e evaluates to 0.
+
+## Big-step semantics
+
+The big-step semantics extends that of [boolean expressions](../andboolexpr#big-step-semantics) with the following rules:
+```ocaml
+
+---------------------------- [B-Zero]
+Zero => 0
+
+e => n
+---------------------------- [B-Succ]
+Succ(e) => n+1
+
+e => n   n>0
+---------------------------- [B-Pred]
+Pred(e) => n-1
+
+e => 0
+---------------------------- [B-IsZeroZero]
+IsZero(e) => true
+
+e => n   n>0
+---------------------------- [B-IsZeroSucc]
+IsZero(e) => false
+```
+
+## Concrete syntax
 
 Follow the unit tests in [arithexpr.ml](test/arithexpr.ml) for the concrete syntax of the language. 
 To run the tests, execute the following command from the project directory:
