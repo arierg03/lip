@@ -1,9 +1,9 @@
-# dune exec boolexpr trace
+# dune test
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/alex/lip/boolexpr
 # Auto-detected concurrency: 4
-$ /home/alex/.opam/LIP/bin/ocamlc.opt -config > /tmp/dune_56ac68_output
+$ /home/alex/.opam/LIP/bin/ocamlc.opt -config > /tmp/dune_f56ec7_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -109,3 +109,20 @@ $ /home/alex/.opam/LIP/bin/ocamlc.opt -config > /tmp/dune_56ac68_output
 #      ; windows_unicode = false
 #      }
 #  }
+$ (cd _build/default && /home/alex/.opam/LIP/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -bin-annot -I test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/byte -I /home/alex/.opam/LIP/lib/base -I /home/alex/.opam/LIP/lib/base/base_internalhash_types -I /home/alex/.opam/LIP/lib/base/caml -I /home/alex/.opam/LIP/lib/base/shadow_stdlib -I /home/alex/.opam/LIP/lib/jane-street-headers -I /home/alex/.opam/LIP/lib/ppx_compare/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_enumerate/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_hash/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_inline_test/config -I /home/alex/.opam/LIP/lib/ppx_inline_test/runner/lib -I /home/alex/.opam/LIP/lib/ppx_inline_test/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_sexp_conv/runtime-lib -I /home/alex/.opam/LIP/lib/sexplib0 -I /home/alex/.opam/LIP/lib/time_now -I src/.boolexprLib.objs/byte -I test/.boolexpr.objs/byte -no-alias-deps -o test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/byte/dune__exe__Inline_test_runner_boolexpr.cmo -c -impl test/.boolexpr.inline-tests/inline_test_runner_boolexpr.ml-gen)
+$ (cd _build/default && /home/alex/.opam/LIP/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -I test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/byte -I test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/native -I /home/alex/.opam/LIP/lib/base -I /home/alex/.opam/LIP/lib/base/base_internalhash_types -I /home/alex/.opam/LIP/lib/base/caml -I /home/alex/.opam/LIP/lib/base/shadow_stdlib -I /home/alex/.opam/LIP/lib/jane-street-headers -I /home/alex/.opam/LIP/lib/ppx_compare/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_enumerate/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_hash/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_inline_test/config -I /home/alex/.opam/LIP/lib/ppx_inline_test/runner/lib -I /home/alex/.opam/LIP/lib/ppx_inline_test/runtime-lib -I /home/alex/.opam/LIP/lib/ppx_sexp_conv/runtime-lib -I /home/alex/.opam/LIP/lib/sexplib0 -I /home/alex/.opam/LIP/lib/time_now -I src/.boolexprLib.objs/byte -I src/.boolexprLib.objs/native -I test/.boolexpr.objs/byte -I test/.boolexpr.objs/native -intf-suffix .ml-gen -no-alias-deps -o test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/native/dune__exe__Inline_test_runner_boolexpr.cmx -c -impl test/.boolexpr.inline-tests/inline_test_runner_boolexpr.ml-gen)
+$ (cd _build/default && /home/alex/.opam/LIP/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -o test/.boolexpr.inline-tests/inline_test_runner_boolexpr.exe src/boolexprLib.cmxa /home/alex/.opam/LIP/lib/ppx_inline_test/config/inline_test_config.cmxa /home/alex/.opam/LIP/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/alex/.opam/LIP/lib/base/base_internalhash_types /home/alex/.opam/LIP/lib/base/caml/caml.cmxa /home/alex/.opam/LIP/lib/sexplib0/sexplib0.cmxa /home/alex/.opam/LIP/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/alex/.opam/LIP/lib/base/base.cmxa -I /home/alex/.opam/LIP/lib/base /home/alex/.opam/LIP/lib/jane-street-headers/jane_street_headers.cmxa /home/alex/.opam/LIP/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/alex/.opam/LIP/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/alex/.opam/LIP/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/alex/.opam/LIP/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/alex/.opam/LIP/lib/time_now/time_now.cmxa -I /home/alex/.opam/LIP/lib/time_now /home/alex/.opam/LIP/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa test/boolexpr.cmxa /home/alex/.opam/LIP/lib/ppx_inline_test/runner/lib/ppx_inline_test_runner_lib.cmxa -I /home/alex/.opam/LIP/lib/ppx_inline_test/runner/lib test/.boolexpr.inline-tests/.boolexpr.inline-tests.eobjs/native/dune__exe__Inline_test_runner_boolexpr.cmx -linkall)
+$ (cd _build/default/test && .boolexpr.inline-tests/inline_test_runner_boolexpr.exe inline-test-runner boolexpr -source-tree-root .. -diff-cmd -)
+> false => false [OK]
+> true => true [OK]
+> not not true => true [OK]
+> not if true then false else true => true [OK]
+> if true then (if true then false else true) else (if true then true else false) => false [OK]
+> if (if false then false else false) then (if false then true else false) else (if true then false else true) => false [OK]
+> if (if (if false then false else false) then (if false then true else false) else (if true then false else true)) then (if false then true else false) else (if true then false else true) => false [OK]
+> not true or true => true [OK]
+> not true and false => false [OK]
+> false and false or true => true [OK]
+> true or false and false => true [OK]
+> if true then true else false and false => true [OK]
+> if true then false else false or true => false [OK]

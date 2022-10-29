@@ -5,11 +5,14 @@ type token =
   | TRUE
   | THEN
   | RPAREN
+  | OR
+  | NOT
   | LPAREN
   | IF
   | FALSE
   | EOF
   | ELSE
+  | AND
 
 (* This exception is raised by the monolithic API functions. *)
 
